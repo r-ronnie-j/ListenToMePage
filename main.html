@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Listen To Me - Music Player App</title>
+    <link rel="icon" href="./3-1.png" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #1a237e;
+      }
+
+      h2 {
+        color: #1a237e;
+        margin-top: 30px;
+      }
+
+      p {
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .container {
+        max-width: 800px;
+        width: 50%;
+        height: 40vh;
+        margin: 0 auto;
+      }
+
+      /* Dark mode styles */
+      .dark-mode {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .dark-mode button {
+        background-color: #555;
+        color: #fff;
+      }
+      .images {
+        display: flex;
+        flex-direction: row;
+        height: 40vh;
+        gap: 10px;
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer and Edge */
+        justify-content: center;
+      }
+
+      .images::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+      }
+      .simple1 {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Responsive styles */
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 24px;
+        }
+
+        body {
+          margin: 5px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    </style>
+    <script>
+      function toggleDarkMode() {
+        var body = document.querySelector("body");
+        body.classList.toggle("dark-mode");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Listen To Me</h1>
+
+      <div class="simple">
+        <div class="simple1">
+          <img src="./2-1.png" height="300px" />
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+          "
+        >
+          <a
+            href="https://www.paypal.com/donate/?hosted_button_id=9444QNZUECLM4"
+            target="_blank"
+            ><button
+              style="
+                padding: 10px 20px;
+                background-color: #008cba;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              "
+            >
+              Donate Us
+            </button></a
+          >
+          <button
+            style="
+              padding: 10px 20px;
+              background-color: #4caf50;
+              color: white;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            "
+          >
+            Download Apk
+          </button>
+        </div>
+        <p>
+          ListenToMe is a music player app designed for Android users that
+          enhances productivity. The main motive behind creating the app is to
+          help users listen to their favorite YouTubers while doing their
+          important tasks.
+        </p>
+      </div>
+      <h2>Features in our app</h2>
+      <div class="simple">
+        <p>
+          Introducing our app, where music meets convenience and innovation.
+          Experience the ultimate music player service with a twist. Subscribe
+          to YouTube channels effortlessly, automatically staying updated with
+          new content. Bookmark playlists, track your history, and download
+          songs. Elevate your music experience, effortlessly.
+        </p>
+      </div>
+      <div class="images">
+        <img src="./homePages.png" />
+        <img src="./newItem.png" />
+        <img src="./playlistPage.png" />
+        <img src="./subscriptionPage.png" />
+      </div>
+      <h2>Our Motivation</h2>
+      <div class="simple">
+        <p>
+          We are a close-knit group of friends embarking on a journey to create
+          something truly special — a tool that empowers individuals to enhance
+          their productivity. Our debut app, ListenToMe, stems from our
+          collective desire to help you stay focused on your work in the most
+          delightful way possible. With ListenToMe, we present a novel approach:
+          rather than being visually captivated by YouTube videos, we offer a
+          unique solution that enables you to listen to them instead.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
