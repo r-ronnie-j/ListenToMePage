@@ -118,18 +118,37 @@
               Donate Us
             </button></a
           >
-          <button
-            style="
-              padding: 10px 20px;
-              background-color: #4caf50;
-              color: white;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-            "
-          >
-            Download Apk
-          </button>
+          <button id="downloadButton" style="
+          padding: 10px 20px;
+          background-color: #4caf50;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        ">
+          Download Apk
+        </button>
+        
+        <script>
+          // Get a reference to the button element
+          const downloadButton = document.getElementById('downloadButton');
+        
+          // Add a click event listener to the button
+          downloadButton.addEventListener('click', function() {
+            // Create a link element
+            const link = document.createElement('a');
+            
+            // Set the href attribute to the APK file path
+            link.href = './ListenToMe.apk';
+            
+            // Set the download attribute to the desired file name
+            link.download = 'ListenToMe.apk';
+            
+            // Programmatically trigger the click event on the link
+            link.click();
+          });
+        </script>
+        
         </div>
         <p>
           ListenToMe is a music player app designed for Android users that
